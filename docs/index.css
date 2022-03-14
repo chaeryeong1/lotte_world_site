@@ -1,4 +1,67 @@
-/* 폰트적용 */
+   
+    /*스와이퍼 라이브러리*/
+   
+
+    .slide {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slide-1 {
+      height: 691px;
+      width: 1920px;
+    }
+   
+   .slide-1-1{
+z-index:1;
+  left:1454px;
+  top:534px;
+}
+ 
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: transparent;
+      border: 1px solid #ed8585;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      width: 40px;
+      transition: width 0.5s;
+      border-radius: 5px;
+      background: #ed8585;
+      border: 1px solid transparent;
+    }
+
+    .swiper-button-next {
+      background-image: url("https://cdn.jsdelivr.net/gh/chaeryeong1/lotteworld/Group 1491231.svg");
+      padding-right: 60px;
+    }
+
+    .swiper-button-prev {
+      background-image: url("https://cdn.jsdelivr.net/gh/chaeryeong1/lotteworld/Group 1501231.svg");
+      padding-left: 60px;
+    }
+    /* 폰트적용 */
 @font-face {
     font-family: 'LeferiBaseType-RegularA';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
@@ -9,6 +72,7 @@
 html > body {
   font-family: "LeferiBaseType-RegularA";
 }
+
 
 /*커스텀 라이브러리*/
 *{
@@ -24,8 +88,6 @@ html > body {
 @media ( min-width: 1900px ) {
   body { overflow-x:hidden; }
 }
-
-
 /*뜨는애니메이션 라이브러리*/
 
 .festival-snoow,.attraction-1-1{
@@ -50,22 +112,10 @@ html > body {
   }
   
 }
-
-/*top-bar*/
-.top-bar{
-  
- position:fixed;
- z-index :99;
-  background-color:white;
-  
-  height:130px;
-  width:1920px;
-}
 .top-bar-1{
   height:50px;
   width:1920px;
   z-index:-2;
-  
   
 }
 
@@ -231,10 +281,6 @@ filter: invert(0%) sepia(4%) saturate(0%) hue-rotate(337deg) brightness(100%) co
 filter: invert(0%) sepia(4%) saturate(0%) hue-rotate(337deg) brightness(100%) contrast(107%);
 }
 
-/*swiper*/
-.swiper{
-  padding-top:130px;
-}
 /*benefit*/
 .benefit{
   background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/lotteworld/benefit/benefit-bg.png');
@@ -329,6 +375,8 @@ filter: invert(0%) sepia(4%) saturate(0%) hue-rotate(337deg) brightness(100%) co
   backface-visibility: hidden;
 }
 
+
+
 .benefit-card-back {
   transform: rotateY(180deg);
 }
@@ -346,24 +394,6 @@ transform: scale(1.1,1.1);
   -o-transform: rotateY(360deg);
   transform: rotateY(360deg);
 }
-
-.benefit-button{
-  padding:10px 30px 3px 33px;
-  position:absolute;
-  left:835px;
-  top:1006px;
-  border:Solid 3px #E56969;
-  border-radius:30px;
-  color:#E56969;
-  font-weight:bold;
-  font-size:1.1rem;
-}
-.benefit-button:hover{
-  background-color:#E56969;
-  color:white;
-}
-
-
 .festival{
   background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/lotteworld/Festival/festival-bg.png');
   width:1920px;
@@ -647,7 +677,6 @@ filter: invert(0%) sepia(44%) saturate(32%) hue-rotate(315deg) brightness(30%) c
   z-index:5;
 }
 
-
 /*attraction*/
 
 .attraction{
@@ -724,24 +753,8 @@ left:1301px;
 }
 
 .attraction-13{
-   left:835px;
+   left:833px;
   top:1470px;
-}
-
-.attraction-button{
-  padding:10px 30px 3px 33px;
-  position:absolute;
-  left:835px;
-  top:1583px;
-  border:Solid 3px white;
-  border-radius:30px;
-  color:white;
-  font-weight:bold;
-  font-size:1.1rem;
-}
-.attraction-button:hover{
-  background-color:white;
-  color:#E56969;
 }
 /*footer-bar*/
 
